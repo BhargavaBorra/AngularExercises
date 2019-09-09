@@ -1,0 +1,14 @@
+<h2>Data Binding</h2>
+<p>
+  Select animals to display
+</p>
+<div>
+  <select (change)="onChange($event.target.value)">
+    <option *ngFor="let animal of animals" value= {{animal.id}}>
+      {{animal.name}}
+    </option>
+  </select>
+  <span >
+      <img *ngIf="show" src="assets/images/{{z}}.png" />
+  </span>
+</div>

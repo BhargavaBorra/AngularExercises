@@ -1,0 +1,28 @@
+<h2>
+  Toggle Exercise
+</h2>
+<table border="Full">
+    <thead>
+    <th>
+        <button (click)="toggleName()" id="bt1">
+            {{buttonName}}
+        </button>
+    </th>
+    <th>
+        <button (click)="toggleAccNo()" id="bt2">
+            {{buttonAcc}}
+        </button>
+    </th>
+    </thead>
+    <tbody>
+    <tr *ngFor="let bank of Bankers">
+    <ng-container *ngIf="show">
+    <td>{{bank.name}}</td>
+    </ng-container>
+    <ng-container *ngIf="hide">
+    <td>{{bank.acct}}</td>
+    </ng-container>
+    </tr>
+    </tbody>
+</table>
+

@@ -1,0 +1,12 @@
+<h2>Displaying Week</h2>
+<div class="container">
+  <nav class="navbar navbar-default">
+      <ul class="nav navbar-nav">
+          <input [(ngModel)]="x" placeholder="Enter a number b/w 1 and 7"/>
+          <p><button (click) = "findweek1()">Submit</button></p>
+        <p>{{DisplayWeek}}</p> 
+      </ul>
+  </nav>
+  <router-outlet></router-outlet>
+</div>
+
