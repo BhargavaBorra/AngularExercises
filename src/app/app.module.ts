@@ -10,6 +10,7 @@ import { DatetimeComponent } from './Datetime/datetime.component';
 import { EnumComponent } from './Enum/enum.component';
 import { BankDetailsComponent } from './Bank/bank-details.component';
 import { AnimalDisplayComponent } from './Animals/animal-display.component';
+import { NameDisplayComponent } from './name/name-display.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { AnimalDisplayComponent } from './Animals/animal-display.component';
     DatetimeComponent,
     EnumComponent,
     BankDetailsComponent,
-    AnimalDisplayComponent
+    AnimalDisplayComponent,
+    NameDisplayComponent
   ],
   imports: [
     BrowserModule,

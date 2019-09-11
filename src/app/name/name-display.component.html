@@ -1,0 +1,15 @@
+<h2>Two-way Data Binding</h2>
+<p>
+  name-display works!
+</p>
+<div class="container">
+  <nav class="navbar navbar-default">
+      <ul class="nav navbar-nav">
+          <input [(ngModel)]="name" type="text" placeholder="Enter a text"/>
+          <button (click) = "caseDivide()">Submit</button>
+        <p>Entered lowercase: {{Displaylowercase}}</p>
+        <p>Entered Uppercase: {{Displayuppercase}}</p>
+      </ul>
+  </nav>
+  <router-outlet></router-outlet>
+</div>

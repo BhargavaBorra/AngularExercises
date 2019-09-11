@@ -9,6 +9,7 @@ import { CustomerMainComponent } from './customer/customer-main.component';
 import { EnumComponent } from './Enum/enum.component'
 import { BankDetailsComponent } from './Bank/bank-details.component';
 import { AnimalDisplayComponent } from './Animals/animal-display.component';
+import { NameDisplayComponent } from './name/name-display.component';
 
 const routes: Routes = [
   { path: 'Customer', component: CustomerMainComponent,
@@ -20,6 +21,7 @@ const routes: Routes = [
   { path: 'Enum', component: EnumComponent },
   { path: 'Bank', component: BankDetailsComponent },
   { path: 'Animal', component: AnimalDisplayComponent },
+  { path: 'Name', component: NameDisplayComponent },
   { path: '', redirectTo: '/', pathMatch: 'full' }
 ];
 
