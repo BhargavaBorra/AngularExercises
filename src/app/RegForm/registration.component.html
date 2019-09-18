@@ -1,0 +1,56 @@
+<h2>Component Interaction</h2>
+<div class="container">
+  <nav class="navbar navbar-default">
+      <ul class="nav navbar-nav">
+        <div>
+          <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+            <label>
+              *First Name:
+              <input type="text" formControlName="firstName" required>
+            </label>
+          
+            <label>
+              *Last Name:
+              <input type="text" formControlName="lastName" required>
+            </label>
+          
+            <div formGroupName="address" required>
+              <h3>Address</h3>
+          
+              <label>
+                Street:
+                <input type="text" formControlName="street" required>
+              </label>
+          
+              <label>
+                City:
+                <input type="text" formControlName="city" required>
+              </label>
+
+              <label>State</label>
+              <div>
+                  <select formControlName="state" (change)=changestate($event.target.value)>
+                      <option *ngFor ="let state of state">{{state}} </option>
+                </select>
+              </div>
+
+              <label>Country</label>
+              <div>
+              <select (change)="changeCountry($event.target.value)"  formControlName="country">
+                <option *ngFor ="let country of countryList">{{country.countryname}} </option>
+              </select>
+              </div>
+
+              <label>
+                Zip Code:
+                <input type="text" (keypress)="number($event)" formControlName="zip" maxlength="6" required>
+              </label>
+            </div>
+         
+            <button type="submit" [disabled]="!profileForm.valid">Submit</button>
+          </form>
+        </div>
+      </ul>
+  </nav>
+  <router-outlet></router-outlet>
+</div>

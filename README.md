@@ -1,27 +1,32 @@
 # Myapp
+    This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
+##Exercise 1 
+    Component Location - /app/customer
 
-## Development server
+##Exercise 2 
+    Component Location - /app/Datetime
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+##Exercise 3
+    Component Location - /app/Enum
 
-## Code scaffolding
+##Exercise 4
+    Component Location - /app/Bank
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+##Exercise 5
+    Component Location - /app/Animals
 
-## Build
+##Exercise 6
+    Component Location - /app/name
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+##Exercise 7 
+    Component Location - /app/RegForm
 
-## Running unit tests
+##Exercise 8
+    To be uploaded
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+##Exercise 9
+    To be uploaded
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+##Exercise 10
+    Will share a separate repo for this
